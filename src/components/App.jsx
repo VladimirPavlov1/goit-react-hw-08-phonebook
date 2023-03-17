@@ -1,37 +1,36 @@
-import { FormContacts } from './FormContacts/FormContacts';
-import { Section } from './Section/Section';
-import { ContactList } from './ContactList/ContactList';
-import { Filter } from './Filter/Filter';
-import {  useDispatch,useSelector } from 'react-redux';
-import { useEffect } from 'react';
-import { Contacts, Container } from './App.styled';
-
-import { fetchContacts } from 'redux/operations';
-import { FallingLines } from 'react-loader-spinner';
-import { selectError, selectIsLoading } from 'redux/selectors';
+import { useAuth } from 'hooks/hooks';
+import { lazy,useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { Route,Routes } from 'react-router-dom';
+import { refreshUser } from 'redux/Auth/operations';
+import { Layout } from './Layout';
+import { PrivateRoute } from './PrivateRoute';
+import { RestrictedRoute } from './RestrictedRoute';
 
 
-export const App = () => {
-  
-  const error = useSelector(selectError);
-  const isLoading = useSelector(selectIsLoading);
+
+const HomePage = lazy(() => import('../pages/Home'));
+const RegisterPage  = lazy(()=>import('../pages/Register'));
+const LoginPage = lazy(()=>import('../pages/Login'));
+const ContactsPage = lazy(()=>import("../pages/Contacts"));
+
+export const App = ()=>{
   const dispatch = useDispatch();
-console.log(isLoading)
+  const {isRefreshing} = useAuth;
 
-  useEffect(() => {
-    dispatch(fetchContacts());
-  }, [dispatch]);
+  useEffect(()=>{
+    dispatch(refreshUser());
+  },[dispatch]);
 
   return (
-    <Container>
-      <Section title="Phonebook">
-        <FormContacts />
-      </Section>
+  <Routes>
+    <Route path = '/' element = {<Layout/>}/>
+     <Route index element = {<HomePage/>}/> 
+     <Route path = '/register' element ={<RestrictedRoute redirectTo='/contacts' component = {<RegisterPage/>}/>}/>
+    <Route path='/login' element = {<RestrictedRoute redirectTo='/contacts' component ={<LoginPage/>}/>}/>
+    <Route path = '/contacts' element = {<PrivateRoute redirectTo='/login' component = {<ContactsPage/>}/>}/> 
+  </Routes>
+  )
+}
 
-      <Contacts>Contacts</Contacts>
-      <Filter />
-        
-       {isLoading&&!error?<FallingLines/>:<ContactList /> }
-    </Container>
-  );
-};
+

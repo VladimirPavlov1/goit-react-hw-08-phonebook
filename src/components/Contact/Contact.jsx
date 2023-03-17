@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { deleteContacts } from 'redux/operations';
+import { deleteContacts } from 'redux/Contact/operations';
 import { WrapperContact, Title, BtnDelete } from './Contact.styled';
 
 

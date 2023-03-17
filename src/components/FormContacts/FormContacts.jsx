@@ -9,8 +9,8 @@ import {
 import { Formik, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useDispatch,useSelector } from 'react-redux';
-import { addContacts } from 'redux/operations';
-import { selectContacts } from 'redux/selectors';
+import { addContacts } from 'redux/Contact/operations';
+import { selectContacts } from 'redux/Contact/selectors';
 
 const FilterSchema = Yup.object().shape({
   name: Yup.string()
