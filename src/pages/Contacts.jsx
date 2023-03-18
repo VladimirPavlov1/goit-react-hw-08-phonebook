@@ -11,7 +11,7 @@ import { FallingLines } from 'react-loader-spinner';
 import { selectError, selectIsLoading } from 'redux/Contact/selectors';
 
 
-export const Contacts = () => {
+export default function Contacts(){
   
   const error = useSelector(selectError);
   const isLoading = useSelector(selectIsLoading);

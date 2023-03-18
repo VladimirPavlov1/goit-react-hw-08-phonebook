@@ -3,13 +3,13 @@ import { Suspense } from "react"
 import { AppBar } from "components/AppBar/AppBar"
 import { ToastContainer } from 'react-toastify'
 
-export const Layout = () => {
+export const Layout=()=>{
     return (
         <div>
             <AppBar/>
-            <Suspense fallback = {null}>
-                <Outlet/>
-            </Suspense>
+                <Suspense fallback = {null}>
+                    <Outlet/>
+                </Suspense>
             <ToastContainer/>
         </div>
     )

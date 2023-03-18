@@ -3,9 +3,9 @@ import { register,logIn,logOut,refreshUser } from "./operations";
 
 const initialState = {
     user: {name:null, email:null},
-    isLoggedIn:null,
-    isLoggedOut:null,
-    isRefreshing:null,
+    token:null,
+    isLoggedIn:false,
+    isRefreshing:false,
 };
 
 const authSlice = createSlice({
@@ -20,6 +20,11 @@ const authSlice = createSlice({
             state.isLoggedIn = true;
            
         })
+        .addCase( logOut.fulfilled,(state) =>{
+            state.user = { name: null, email: null };
+            state.token = null;
+            state.isLoggedIn = false;
+          })
        
     .addMatcher(
         isAnyOf(register.fulfilled,
@@ -37,3 +42,5 @@ const authSlice = createSlice({
 })
 
 export const authReducer  = authSlice.reducer;
+
+ 

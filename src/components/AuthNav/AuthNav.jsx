@@ -4,10 +4,10 @@ import { Link } from "./AuthNav.styled"
 export const AuthNav = () => {
     return (
         <div>
-            <Link>
+            <Link to = "/register">
                 Register
             </Link>
-            <Link>
+            <Link to = "/login">
                 Log in
             </Link>
         </div>
