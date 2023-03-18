@@ -1,13 +1,22 @@
 {
   "files": {
-    "main.css": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/css/main.7acaea2f.css",
-    "main.js": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/main.d8bbddd1.js",
+    "main.js": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/main.71d6eca2.js",
+    "static/js/415.831236ed.chunk.js": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/415.831236ed.chunk.js",
+    "static/js/236.62a98b4a.chunk.js": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/236.62a98b4a.chunk.js",
+    "static/js/628.528aad1d.chunk.js": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/628.528aad1d.chunk.js",
+    "static/js/859.fe082e32.chunk.js": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/859.fe082e32.chunk.js",
+    "static/js/270.ed8f73c4.chunk.js": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/270.ed8f73c4.chunk.js",
+    "static/js/409.1fb833c5.chunk.js": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/409.1fb833c5.chunk.js",
     "index.html": "/VladimirPavlov1/goit-react-hw-08-phonebook/index.html",
-    "main.7acaea2f.css.map": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/css/main.7acaea2f.css.map",
-    "main.d8bbddd1.js.map": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/main.d8bbddd1.js.map"
+    "main.71d6eca2.js.map": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/main.71d6eca2.js.map",
+    "415.831236ed.chunk.js.map": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/415.831236ed.chunk.js.map",
+    "236.62a98b4a.chunk.js.map": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/236.62a98b4a.chunk.js.map",
+    "628.528aad1d.chunk.js.map": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/628.528aad1d.chunk.js.map",
+    "859.fe082e32.chunk.js.map": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/859.fe082e32.chunk.js.map",
+    "270.ed8f73c4.chunk.js.map": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/270.ed8f73c4.chunk.js.map",
+    "409.1fb833c5.chunk.js.map": "/VladimirPavlov1/goit-react-hw-08-phonebook/static/js/409.1fb833c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.d8bbddd1.js"
+    "static/js/main.71d6eca2.js"
   ]
 }
