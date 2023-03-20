@@ -6,7 +6,7 @@ export const Container = styled.div`
   padding: 20px;
 `;
 
-export const Contacts = styled.h2`
+export const ContactsTitle = styled.h2`
   font-weight: 700;
   font-size: 1.7em;
 `;

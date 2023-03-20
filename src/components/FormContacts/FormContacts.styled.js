@@ -5,6 +5,7 @@ export const FormWrapper = styled.div`
   width: 400px;
   height: 350px;
   padding: 10px;
+ 
 
   border: 1px solid black;
 `;

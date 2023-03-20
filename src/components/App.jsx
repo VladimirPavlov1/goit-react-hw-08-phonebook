@@ -9,10 +9,10 @@ import { RestrictedRoute } from './RestrictedRoute';
 
 
 
-const HomePage = lazy(() => import('../pages/Home'));
+const HomePage = lazy(() => import('../pages/Home/Home'));
 const RegisterPage  = lazy(()=>import('../pages/Register'));
-const LoginPage = lazy(()=>import('../pages/Login'));
-const ContactsPage = lazy(()=>import("../pages/Contacts"));
+const LoginPage = lazy(()=>import('../pages/Login/Login'));
+const ContactsPage = lazy(()=>import("../pages/Contacts/Contacts"));
 
 export const App = ()=>{
   const dispatch = useDispatch();
