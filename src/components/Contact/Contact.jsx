@@ -2,7 +2,6 @@ import { useDispatch } from 'react-redux';
 import { deleteContacts } from 'redux/Contact/operations';
 import { WrapperContact, Title, BtnDelete } from './Contact.styled';
 
-
 export const Contact = ({ name, id, number }) => {
   const dispatch = useDispatch();
 
@@ -20,4 +19,3 @@ export const Contact = ({ name, id, number }) => {
     </WrapperContact>
   );
 };
-

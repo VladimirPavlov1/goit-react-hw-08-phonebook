@@ -8,7 +8,7 @@ justify-content: space-between;
 `;
 
 
-export const UserMenuTitle=styled.p`
+export const UserMenuTitle = styled.p`
 margin-right: 16px;
 
 font-size: 18px;
