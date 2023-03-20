@@ -47,7 +47,7 @@ export const FormContacts = () => {
 
   const handleSubmit = ({ name, number }, { resetForm }) => {
     
-    if(contacts.some(contact=>contact.name.toLowerCase||contact.number===number)){
+    if(contacts.some(contact=>contact.name.toLowerCase===name||contact.number===number)){
       return alert("You have this contact")
     }
     
